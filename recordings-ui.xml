@@ -61,6 +61,9 @@
                     <textarea name="titlesubtitle" from="base_textarea">
                         <area>48,0,512,36</area>
                         <scroll direction="horizontal" />
+                        <font state="warning">text_orange</font>
+                        <font state="disabled">text_red</font>
+                        <font state="error">text_error</font>
                     </textarea>
                     <textarea name="00x00" from="base_textarea">
                         <area>530,5,60,30</area>
