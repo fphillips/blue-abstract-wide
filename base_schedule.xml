@@ -5,6 +5,7 @@
     <!-- Shows the channel list and time at the top 
          The frontend will segfault when guidegrid is put in a group -->
     <group name="base_channellist_group">
+	<position>20,235</position>
         
        <!-- this is the background for the entire tv program list -->
         <shape name="channellist_background" from="base_background_shape">

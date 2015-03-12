@@ -23,9 +23,7 @@
 	    </textarea>
         </group>
 
-        <group name="program_channellist_group" from="base_channellist_group">
-            <position>20,235</position>
-        </group>
+        <group name="program_channellist_group" from="base_channellist_group" />
 
         <shape name="guidegrid_background" from="base_background_shape">
             <area>276,270,982,442</area>
@@ -112,9 +110,7 @@
             </textarea>
         </group>
 
-        <group name="program_channellist_group" from="base_channellist_group">
-            <position>20,235</position>
-        </group>
+        <group name="program_channellist_group" from="base_channellist_group" />
         
         <shape name="guidegrid_background" from="base_background_shape">
             <area>276,270,982,442</area>
