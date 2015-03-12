@@ -25,8 +25,12 @@
         </textarea>
 
         <!-- this is the vertical list of the available channels -->
-        <buttonlist name="channellist" from="base_buttonlist">
-            <area>15,45,200,450</area>
+        <buttonlist name="channellist">
+            <area>15,45,200,430</area>
+	    <layout>vertical</layout>
+            <scrollstyle>free</scrollstyle>
+            <wrapstyle>selection</wrapstyle>
+            <buttonarea>0,0,100%,100%</buttonarea>
             <spacing>1</spacing>
             <triggerevent context="Global" action="ESCAPE">LEFT</triggerevent>
             <statetype name="buttonitem">
@@ -47,12 +51,16 @@
                         <preserveaspect>true</preserveaspect>
                     </imagetype>
 
-                    <textarea name="buttontext" from="base_textarea">
+                    <textarea name="channelnumber" from="base_textarea">
                         <area>90,0,135,70</area>
                         <font state="favourite">text_yellow</font>
                         <font state="unavailable">text_blue</font>
                         <font state="favunavailable">text_purple</font>
                         <scroll direction="horizontal" rate="35"/>
+			<cutdown>no</cutdown>
+			<align>allcenter</align>
+			<multiline>yes</multiline>
+			<template>%CHANNELNUMBER|\n%%CALLSIGN%</template>
                     </textarea>
                 </state>
                 <state name="inactive" from="active"/>
