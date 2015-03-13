@@ -34,7 +34,7 @@
 
         <!-- this is the list with the tv program -->
         <guidegrid name="guidegrid">
-            <area>290,270,955,415</area>
+            <area>290,290,955,415</area>
             <layout>horizontal</layout>
             <channels>6</channels>
             <timeslots>6</timeslots>
@@ -123,7 +123,7 @@
         
         <!-- this is the list with the tv program -->
         <guidegrid name="guidegrid">
-            <area>290,270,955,415</area>
+            <area>290,290,955,415</area>
             <layout>horizontal</layout>
             <channels>6</channels>
             <timeslots>6</timeslots>
