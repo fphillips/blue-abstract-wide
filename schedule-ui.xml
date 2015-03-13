@@ -26,13 +26,13 @@
         <group name="program_channellist_group" from="base_channellist_group" />
 
         <shape name="guidegrid_background" from="base_background_shape">
-            <area>276,270,982,442</area>
+            <area>277,272,980,441</area>
             <line color="#000000" alpha="0" width="0" />
         </shape>
 
         <!-- this is the list with the tv program -->
         <guidegrid name="guidegrid">
-            <area>290,285,955,415</area>
+            <area>276,271,982,443</area>
             <layout>horizontal</layout>
             <channels>6</channels>
             <timeslots>6</timeslots>
@@ -113,13 +113,13 @@
         <group name="program_channellist_group" from="base_channellist_group" />
         
         <shape name="guidegrid_background" from="base_background_shape">
-            <area>276,270,982,442</area>
+	    <area>277,272,980,441</area>
             <line color="#000000" alpha="0" width="0" />
         </shape>
         
         <!-- this is the list with the tv program -->
         <guidegrid name="guidegrid">
-            <area>290,285,955,415</area>
+	    <area>276,271,982,443</area>
             <layout>horizontal</layout>
             <channels>6</channels>
             <timeslots>6</timeslots>
