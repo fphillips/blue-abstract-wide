@@ -68,6 +68,7 @@
                     <textarea name="00x00" from="base_textarea">
                         <area>570,0,60,36</area>
                         <align>right,vcenter</align>
+			<alpha>180</alpha>
                     </textarea>
                     <textarea name="shortstartdate" from="base_textarea">
                         <area>650,0,60,36</area>
