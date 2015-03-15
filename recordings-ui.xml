@@ -59,31 +59,31 @@
                 <state name="active">
                     <area>0,0,850,36</area>
                     <textarea name="titlesubtitle" from="base_textarea">
-                        <area>48,0,512,36</area>
+                        <area>48,0,500,36</area>
                         <scroll direction="horizontal" />
                         <font state="warning">text_orange</font>
                         <font state="disabled">text_red</font>
                         <font state="error">text_error</font>
                     </textarea>
                     <textarea name="00x00" from="base_textarea">
-                        <area>530,5,60,30</area>
+                        <area>570,0,60,36</area>
                         <align>right,vcenter</align>
                     </textarea>
                     <textarea name="shortstartdate" from="base_textarea">
-                        <area>600,0,80,36</area>
+                        <area>650,0,60,36</area>
                         <align>right,vcenter</align>
                     </textarea>
                     <textarea name="starttime" from="base_textarea">
-                        <area>690,0,80,36</area>
+                        <area>720,0,80,36</area>
                         <align>allcenter</align>
                     </textarea>                    
                     <imagetype name="no_jobstate" from="base_icon_inactive">
                         <filename>images/icons/processing.png</filename>
-                        <area>778,3,30,30</area>
+                        <area>808,3,30,30</area>
                     </imagetype>
 
                     <statetype name="jobstate">
-                        <position>775,0</position>
+                        <position>805,0</position>
                         <state name="recording">
                             <imagetype name="background" from="base_icon_selected">
                                 <filename>images/icons/recording.png</filename>
