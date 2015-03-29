@@ -355,12 +355,13 @@
             <cutdown>no</cutdown>
             <scroll direction="horizontal" rate="35"/>
             <font>title</font>
+	    <template>%TITLE%% (|YEAR|)%</template>
         </textarea>
 
         <textarea name="starttime" from="title">
             <area>120,495,400,36</area>
             <font>text</font>
-            <template>%STARTTIME%-%ENDTIME% : %LENMINS%</template>
+            <template>%SHORTTIMEDATE%, %LENMINS%</template>
         </textarea>
 
         <!-- separates the title and channel and the 
