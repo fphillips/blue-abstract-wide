@@ -150,12 +150,13 @@
         
         <!-- the livetv video itself -->
         <imagetype name="video">
-            <area>35,70,224,127</area>
+            <area>22,52,253,161</area>
+<!--            <area>22,62,253,142</area>-->
         </imagetype>
          <!-- the shape around the livetv video -->
-        <shape name="video_background_image" from="base_background_shape">
+<!--        <shape name="video_background_image" from="base_background_shape">
             <area>35,70,224,127</area>
-        </shape>
+        </shape>-->
         <!-- the vertical separator -->
         <shape name="video_separator" from="base_background_shape">
             <area>275,51,1,163</area>
