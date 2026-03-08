@@ -23,18 +23,16 @@
 	    </textarea>
         </group>
 
-        <group name="program_channellist_group" from="base_channellist_group">
-            <position>20,235</position>
-        </group>
+        <group name="program_channellist_group" from="base_channellist_group" />
 
         <shape name="guidegrid_background" from="base_background_shape">
-            <area>276,270,982,442</area>
+            <area>277,272,980,441</area>
             <line color="#000000" alpha="0" width="0" />
         </shape>
 
         <!-- this is the list with the tv program -->
         <guidegrid name="guidegrid">
-            <area>290,270,955,415</area>
+            <area>276,271,982,443</area>
             <layout>horizontal</layout>
             <channels>6</channels>
             <timeslots>6</timeslots>
@@ -112,18 +110,16 @@
             </textarea>
         </group>
 
-        <group name="program_channellist_group" from="base_channellist_group">
-            <position>20,235</position>
-        </group>
+        <group name="program_channellist_group" from="base_channellist_group" />
         
         <shape name="guidegrid_background" from="base_background_shape">
-            <area>276,270,982,442</area>
+	    <area>277,272,980,441</area>
             <line color="#000000" alpha="0" width="0" />
         </shape>
         
         <!-- this is the list with the tv program -->
         <guidegrid name="guidegrid">
-            <area>290,270,955,415</area>
+	    <area>276,271,982,443</area>
             <layout>horizontal</layout>
             <channels>6</channels>
             <timeslots>6</timeslots>
@@ -154,12 +150,13 @@
         
         <!-- the livetv video itself -->
         <imagetype name="video">
-            <area>35,70,224,127</area>
+            <area>22,52,253,161</area>
+<!--            <area>22,62,253,142</area>-->
         </imagetype>
          <!-- the shape around the livetv video -->
-        <shape name="video_background_image" from="base_background_shape">
+<!--        <shape name="video_background_image" from="base_background_shape">
             <area>35,70,224,127</area>
-        </shape>
+        </shape>-->
         <!-- the vertical separator -->
         <shape name="video_separator" from="base_background_shape">
             <area>275,51,1,163</area>
@@ -304,13 +301,18 @@
                 <state name="active">
                     <area>0,0,995,36</area>
                     <textarea name="shortstarttimedate" from="base_textarea">
-                        <area>8,0,204,36</area>
+                        <area>8,0,182,36</area>
                     </textarea>
                     <textarea name="channel" from="shortstarttimedate">
-                        <area>220,0,160,36</area>
+                        <area>200,0,140,36</area>
                     </textarea>
                     <textarea name="titlesubtitle" from="shortstarttimedate">
-                        <area>410,0,540,36</area>
+                        <area>350,0,530,36</area>
+                    </textarea>
+                    <textarea name="recordedpercent" from="buttontext">
+                        <area>890,01,50,36</area>
+                        <align>right,vcenter</align>
+                        <template>%|recordedpercent|%%</template>
                     </textarea>
                     <textarea name="card" from="shortstarttimedate">
                         <area>960,0,30,36</area>
@@ -1117,39 +1119,43 @@
         </textarea>
 
         <shape name="schedule_button_background" from="base_background_shape">
-            <area>290,110,700,412</area>
+            <area>290,70,700,452</area>
         </shape>
         
         <spinbox name="priority" from="base_spinbox_very_wide">
-            <position>305,125</position>
+            <position>305,85</position>
             <template type="negative">Reduce priority by %n</template>
             <template type="zero">Normal recording priority</template>
             <template type="positive">Raise priority by %n</template>
         </spinbox>
 
         <buttonlist name="input" from="base_selector_very_wide">
-            <position>305,164</position>
+            <position>305,124</position>
         </buttonlist>
 
         <spinbox name="startoffset" from="base_spinbox_very_wide">
-            <position>305,205</position>
+            <position>305,165</position>
             <template type="negative">Start recording %n minute(s) late</template>
             <template type="zero">Start recording on time</template>
             <template type="positive">Start recording %n minute(s) early</template>
         </spinbox>
 
         <spinbox name="endoffset" from="base_spinbox_very_wide">
-            <position>305,245</position>
+            <position>305,205</position>
             <template type="negative">End recording %n minute(s) early</template>
             <template type="zero">End recording on time</template>
             <template type="positive">End recording %n minute(s) late</template>
         </spinbox>
 
         <buttonlist name="dupmethod" from="base_selector_very_wide">
-            <position>305,285</position>
+            <position>305,245</position>
         </buttonlist>
 
         <buttonlist name="dupscope" from="base_selector_very_wide">
+            <position>305,285</position>
+        </buttonlist>
+
+        <buttonlist name="autoextend" from="base_selector_very_wide">
             <position>305,325</position>
         </buttonlist>
 

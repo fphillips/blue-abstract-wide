@@ -88,7 +88,6 @@
             <!-- TODO change image -->
             <state name="TV_MENU_ORGANIZE">
                 <imagetype name="watermark">
-                    <mask>images/background_mask.png</mask>
                     <filename>images/watermarks/scripts.jpg</filename>
                     <area>0,0,1280,720</area>
                 </imagetype>
@@ -152,7 +151,6 @@
             <!-- TODO change image -->
             <state name="STREAM_PLAY">
                 <imagetype name="watermark">
-                    <mask>images/background_mask.png</mask>
                     <filename>images/watermarks/scripts.jpg</filename>
                     <area>0,0,1280,720</area>
                 </imagetype>
@@ -167,7 +165,6 @@
             <!-- TODO change image -->
             <state name="MUSIC_SCAN">
                 <imagetype name="watermark">
-                    <mask>images/background_mask.png</mask>
                     <filename>images/watermarks/custom.jpg</filename>
                     <area>0,0,1280,720</area>
                 </imagetype>
@@ -177,7 +174,6 @@
             <!-- TODO change image -->
             <state name="WEBPAGE">
                 <imagetype name="watermark">
-                    <mask>images/background_mask.png</mask>
                     <filename>images/watermarks/scripts.jpg</filename>
                     <area>0,0,1280,720</area>
                 </imagetype>
@@ -185,7 +181,6 @@
             <!-- TODO change image -->
             <state name="NEWS">
                 <imagetype name="watermark">
-                    <mask>images/background_mask.png</mask>
                     <filename>images/watermarks/scripts.jpg</filename>
                     <area>0,0,1280,720</area>
                 </imagetype>
@@ -202,28 +197,24 @@
             <!-- Background images for the extras menu -->
             <state name="DVD_RIP">
                 <imagetype name="watermark">
-                    <mask>images/background_mask.png</mask>
                     <filename>images/watermarks/custom.jpg</filename>
                     <area>0,0,1280,720</area>
                 </imagetype>
             </state>
             <state name="MUSIC_RIP">
                 <imagetype name="watermark">
-                    <mask>images/background_mask.png</mask>
                     <filename>images/watermarks/custom.jpg</filename>
                     <area>0,0,1280,720</area>
                 </imagetype>
             </state>
             <state name="ARCHIVE">
                 <imagetype name="watermark">
-                    <mask>images/background_mask.png</mask>
                     <filename>images/watermarks/custom.jpg</filename>
                     <area>0,0,1280,720</area>
                 </imagetype>
             </state>
             <state name="TV_STATUS">
                 <imagetype name="watermark">
-                    <mask>images/background_mask.png</mask>
                     <filename>images/watermarks/custom.jpg</filename>
                     <area>0,0,1280,720</area>
                 </imagetype>
@@ -254,14 +245,12 @@
             </state>
             <state name="MENU_PLUGINS">
                 <imagetype name="watermark">
-                    <mask>images/background_mask.png</mask>
                     <filename>images/watermarks/custom.jpg</filename>
                     <area>0,0,1280,720</area>
                 </imagetype>
             </state>
             <state name="MENU_ADVANCED">
                 <imagetype name="watermark">
-                    <mask>images/background_mask.png</mask>
                     <filename>images/watermarks/custom.jpg</filename>
                     <area>0,0,1280,720</area>
                 </imagetype>

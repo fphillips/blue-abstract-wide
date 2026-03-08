@@ -5,6 +5,7 @@
     <!-- Shows the channel list and time at the top 
          The frontend will segfault when guidegrid is put in a group -->
     <group name="base_channellist_group">
+	<position>20,235</position>
         
        <!-- this is the background for the entire tv program list -->
         <shape name="channellist_background" from="base_background_shape">
@@ -24,8 +25,12 @@
         </textarea>
 
         <!-- this is the vertical list of the available channels -->
-        <buttonlist name="channellist" from="base_buttonlist">
-            <area>15,45,200,450</area>
+        <buttonlist name="channellist">
+            <area>15,45,200,430</area>
+	    <layout>vertical</layout>
+            <scrollstyle>free</scrollstyle>
+            <wrapstyle>selection</wrapstyle>
+            <buttonarea>0,0,100%,100%</buttonarea>
             <spacing>1</spacing>
             <triggerevent context="Global" action="ESCAPE">LEFT</triggerevent>
             <statetype name="buttonitem">
@@ -46,12 +51,16 @@
                         <preserveaspect>true</preserveaspect>
                     </imagetype>
 
-                    <textarea name="buttontext" from="base_textarea">
+                    <textarea name="channelnumber" from="base_textarea">
                         <area>90,0,135,70</area>
                         <font state="favourite">text_yellow</font>
                         <font state="unavailable">text_blue</font>
                         <font state="favunavailable">text_purple</font>
                         <scroll direction="horizontal" rate="35"/>
+			<cutdown>no</cutdown>
+			<align>allcenter</align>
+			<multiline>yes</multiline>
+			<template>%CHANNELNUMBER|\n%%CALLSIGN%</template>
                     </textarea>
                 </state>
                 <state name="inactive" from="active"/>
@@ -117,7 +126,7 @@
             <scroll direction="horizontal" rate="35"/>
         </textarea>
         <textarea name="template" from="base_textarea">
-            <area>625,10,300,36</area>
+            <area>625,10,270,36</area>
             <scroll direction="horizontal" rate="35"/>
             <template>%Using |TEMPLATE| Template%</template>
         </textarea>
@@ -127,9 +136,9 @@
             <template>Channel: %1</template>
         </textarea>
         <textarea name="timedate" from="base_textarea">
-            <area>945,10,280,36</area>
+            <area>905,10,320,36</area>
             <align>right,vcenter</align>
-            <cutdown>yes</cutdown>
+            <cutdown>no</cutdown>
         </textarea>
         <textarea name="rectypestatus" from="base_textarea">
             <area>825,40,400,36</area>
@@ -150,12 +159,28 @@
         
         <!-- show the plot of the recording -->
         <textarea name="description" from="base_textarea">
-            <area>15,87,1210,63</area>
+            <area>15,87,980,63</area>
             <multiline>yes</multiline>
             <scroll direction="vertical" rate="10"/>
             <align>left,bottom</align>
             <template>%LONGREPEAT%%(|STARS|) %%DESCRIPTION%</template>
         </textarea>
+
+        <group name="recordedgroup" depends="recordedmagic">
+            <textarea name="recordedmagic">
+                <template>%recordedpercent%</template>
+            </textarea>
+            <area>1000,105,220,20</area>
+            <progressbar name="recordedprogressbar" from="base_progressbar">
+                <area>0,0,100%,100%</area>
+            </progressbar>
+            <textarea name="recordedpercent" from="base_textarea">
+                <area>0,0,100%,100%</area>
+                <font>test_small</font>
+                <align>hcenter,vcenter</align>
+                <template>%|recordedpercent|%% recorded</template>
+            </textarea>
+        </group>
 
     </group>
     
